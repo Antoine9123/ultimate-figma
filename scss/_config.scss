@@ -1,0 +1,41 @@
+// --- RESET VALUES ------------------------------------------>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    
+  background: linear-gradient(236.56deg, #2c2d65 0.35%, #201f22 100%);
+  padding: 0vw 8vw;
+  font-family: "Barlow", sans-serif;
+  overflow-x: hidden;
+}
+
+// --- VARIABLES --------------------------------------------->
+$white-color: #ffffff;
+$yellow-color: #e8ab36;
+$pink-color: #e6606c;
+$grey-color:#7f8095;
+
+@mixin button-style($bkg, $color) {
+  cursor: pointer;
+  color: $color;
+  background-color: $bkg;
+  text-decoration: none;
+
+  width: 154px;
+  height: 43px;
+  top: 514px;
+  left: 126px;
+  border-radius: 75px;
+  border: none;
+  padding: 13px 30px;
+  margin-right: 13px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.045em;
+}

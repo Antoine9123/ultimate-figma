@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(236.56deg, #2c2d65 0.35%, #201f22 100%);
+  padding: 0vw 8vw;
+  font-family: "Barlow", sans-serif;
+  overflow-x: hidden;
+}
+
+.img-top-right {
+  z-index: -10;
+  position: absolute;
+  right: -129px;
+  top: -112px;
+  width: 730px;
+  height: 747px;
+  background-image: url(../img/top-right.png);
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  height: 10vh;
+}
+.navbar .logo {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.navbar .logo span {
+  color: #e6606c;
+}
+.navbar .menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 33px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.main-sub {
+  background-color: darkcyan;
+  height: 100vh;
+}
+
+.footer {
+  background-color: darkslategray;
+  height: 50vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+}
+.header-container {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 324px;
+  width: 38vw;
+}
+.header-container h1 {
+  color: #ffffff;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 77px;
+  letter-spacing: 0.045em;
+}
+.header-container h2 {
+  color: #e8ab36;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0.045em;
+  text-align: left;
+}
+.header-container p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.045em;
+  text-align: left;
+}
+.header-container .btn-1 {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #e6606c;
+  text-decoration: none;
+  width: 154px;
+  height: 43px;
+  top: 514px;
+  left: 126px;
+  border-radius: 75px;
+  border: none;
+  padding: 13px 30px;
+  margin-right: 13px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.045em;
+}
+.header-container .btn-2 {
+  cursor: pointer;
+  color: black;
+  background-color: #ffffff;
+  text-decoration: none;
+  width: 154px;
+  height: 43px;
+  top: 514px;
+  left: 126px;
+  border-radius: 75px;
+  border: none;
+  padding: 13px 30px;
+  margin-right: 13px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.045em;
+}
+.header-container::before {
+  content: "";
+  position: absolute;
+  top: -48px;
+  left: -43px;
+  z-index: -1;
+  width: 142px;
+  height: 153px;
+  background-size: cover;
+  background-image: url(../img/header-before.png);
+}
+.header-container::after {
+  content: "";
+  position: absolute;
+  background-size: cover;
+  bottom: -71px;
+  right: 34px;
+  z-index: -1;
+  width: 184px;
+  height: 181px;
+  background-image: url(../img/header-after.png);
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75vh;
+}
+.main .menu-img {
+  width: 570px;
+  height: 570px;
+  background-image: url(../img/menu-img.png);
+  background-size: cover;
+}
+.main .menu-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ffffff;
+  width: 470px;
+  height: 520px;
+}
+.main .menu-container p {
+  color: #7f8095;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+}
+.main .menu-container h1 {
+  font-family: Barlow Condensed;
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 64px;
+  letter-spacing: 0px;
+}
+.main .menu-container h2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.main .menu-container .btn-3 {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #e6606c;
+  text-decoration: none;
+  width: 154px;
+  height: 43px;
+  top: 514px;
+  left: 126px;
+  border-radius: 75px;
+  border: none;
+  padding: 13px 30px;
+  margin-right: 13px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.045em;
+}
+.main .menu-container::after {
+  content: "";
+  position: absolute;
+  border: 3px solid rgba(255, 255, 255, 0.1019607843);
+  width: 210px;
+  height: 210px;
+  border-radius: 100%;
+  left: 232px;
+  top: 68px;
+}
