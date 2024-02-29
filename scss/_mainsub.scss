@@ -1,0 +1,135 @@
+.main-sub {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+
+  &-title {
+    position: relative;
+    height: 40vh;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0px auto;
+
+    p:first-child {
+      color: $grey-color;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 3px;
+    }
+    h1 {
+      color: $white-color;
+      font-family: Barlow Condensed;
+      font-size: 56px;
+      font-weight: 300;
+      line-height: 64px;
+      letter-spacing: 0px;
+    }
+    p {
+      color: $grey-color;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 0px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 14px;
+      left: -7px;
+      content: "";
+      background-image: url(../img/header-before.png);
+      background-size: cover;
+      width: 22vh;
+      height: 22vh;
+    }
+  }
+
+  &-tiles {
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+    width: 100%;
+
+    
+
+    &-tile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 27vw;
+      height: 100%;
+      background: linear-gradient(180deg, #4D4F95 0%, #2B2D66 100%);
+
+        border: 2px solid #FFFFFF14;
+        border-radius: 6%;
+    
+
+
+      
+
+      &-img {
+        background-color: aqua;
+        height: 50%;
+        width: 100%;
+        border-radius: 6% 6% 0 0;
+      }
+
+      
+      
+
+      &-txt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: 50%;
+        width: 80%;
+        
+      }
+
+      &-title {
+        
+        font-family: condensed;
+        color: $white-color;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        
+      }
+
+      &-date {
+        
+        color: $grey-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        
+      }
+    }
+  }
+}
+
+#img1{
+    background-image: url(../img/img1.png);
+    background-size: cover;
+}
+
+#img2{
+    background-image: url(../img/img2.png);
+    background-size: cover;
+}
+
+#img3{
+    background-image: url(../img/img3.png);
+    background-size: cover;
+}

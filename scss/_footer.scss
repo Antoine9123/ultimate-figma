@@ -1,0 +1,93 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+
+  width: 80%;
+  margin: auto;
+  margin-top: 113px;
+  margin-bottom: 30px;
+
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+
+    & > div {
+      width: 20%;
+    }
+
+    .logo {
+      color: $white-color;
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 38px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .logo span {
+      color: $pink-color;
+    }
+
+    .column-2,
+    .column-3 {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      justify-content: space-between;
+
+      h1 {
+        color: $grey-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 3px;
+        text-align: left;
+      }
+      p {
+        color: $white-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+    }
+    .column-4 {
+      content: "";
+      width: 160px;
+      height: 48px;
+      background-image: url(../img/icons.png);
+      background-size: cover;
+    }
+  }
+
+  .policy {
+    margin-top: 11px;
+    display: flex;
+    justify-content: space-between;
+
+    .copyright {
+      color: $grey-color;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+
+    .policy-menu {
+      color: $white-color;
+      display: flex;
+      gap: 48px;
+      justify-content: space-between;
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+      }
+    }
+  }
+}
